@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import LikeButton from "./LikeButton";
 
 type GitHubUser = {
   avatar_url: string;
@@ -15,7 +15,7 @@ type Props = {
 
 export default function AboutMeClient({ user }: Props) {
   return (
-    <div className="w-full max-w-lg bg-white p-6 rounded-lg shadow-md text-center">
+    <div className="w-full max-w-lg bg-gray-400 p-6 rounded-lg shadow-md text-center">
       <img
         src={user.avatar_url}
         alt={`${user.name} avatar`}
@@ -31,6 +31,7 @@ export default function AboutMeClient({ user }: Props) {
       >
         Ver perfil en GitHub
       </a>
+      <LikeButton />
     </div>
   );
 }

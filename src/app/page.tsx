@@ -42,19 +42,20 @@ export default function Home() {
   );
 }*/
 
-
 import React from "react";
 import ReposServer from "@/components/ReposServer";
 import AboutMeServer from "@/components/AboutMeServer";
-import Menu from "@/components/Menu";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-700 flex flex-col items-center p-6">
-      <Menu />
       <h1 className="text-3xl font-bold my-6">Mi Portafolio</h1>
-      <AboutMeServer />
-      <ReposServer />
+      <>
+        {/* @ts-expect-error Server Component */}
+        <AboutMeServer />
+        {/* @ts-expect-error Server Component */}
+        <ReposServer />
+      </>
     </div>
   );
 }

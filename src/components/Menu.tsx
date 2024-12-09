@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <nav className="bg-blue-600 p-4 w-full shadow-md">
+    <nav className="bg-slate-600 p-4 w-full shadow-md">
       <div className="max-w-4xl mx-auto flex justify-between items-center">
         {/* Logo o Título */}
         <h1 className="text-white text-2xl font-semibold">
