@@ -22,14 +22,14 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: pnpm install
+      run: npm install
 
     #- name: Run tests
     #  run: pnpm test
 
     - name: Build and deploy to Netlify
       run: |
-        pnpm build
+        npm run build
         netlify deploy --prod --dir=out
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
