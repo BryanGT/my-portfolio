@@ -1,6 +1,7 @@
 "use client";
 
 import LikeButton from "./LikeButton";
+import Image from 'next/image'
 
 type GitHubUser = {
   avatar_url: string;

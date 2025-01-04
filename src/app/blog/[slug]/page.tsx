@@ -1,10 +1,6 @@
 import { blogPosts } from "@/app/data/blogPosts";
 import { notFound } from "next/navigation";
 
-type BlogPostPageProps = {
-  params: { slug: string }; 
-};
-
 export default async function BlogPostPage(props: {
   params: Promise<{ slug: string }>;
  }) {
