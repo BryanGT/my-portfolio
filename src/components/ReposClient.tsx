@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 type Repo = {
   id: number;
   name: string;
@@ -15,7 +13,7 @@ type Props = {
 export default function ReposClient({ repos }: Props) {
   return (
     <div className="w-full max-w-lg">
-      <h2 className="text-xl font-bold mt-4">Mis Repositorios:</h2>
+      <h2 className="text-xl font-bold mt-4 text-center">Mis Repositorios</h2>
       {repos.map((repo) => (
         <div key={repo.id} className="my-2">
           <a

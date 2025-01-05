@@ -1,4 +1,3 @@
-import React from "react";
 import ReposClient from "./ReposClient";
 
 type Repo = {
